@@ -98,6 +98,25 @@
   }
 }
 
+/* ── Happy Hour title — full-width on mobile ── */
+.hh-title {
+  font-size: 37vw; /* fills ~343px at 375px with Barlow Condensed */
+}
+@media (min-width: 768px) {
+  .hh-title {
+    font-size: clamp(3.5rem, 8vw, 6.5rem);
+  }
+}
+
+/* ── Swipe hint bounce horizontal ───────────── */
+@keyframes bounceX {
+  0%, 100% { transform: translateX(0); }
+  50%       { transform: translateX(4px); }
+}
+.animate-bounce-x {
+  animation: bounceX 1s ease-in-out infinite;
+}
+
 /* ── Animations ─────────────────────────────── */
 @keyframes marquee {
   from { transform: translateX(0); }

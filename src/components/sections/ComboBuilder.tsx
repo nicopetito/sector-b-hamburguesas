@@ -266,7 +266,7 @@ export default function ComboBuilder() {
       <div className="mx-auto max-w-6xl px-4">
 
         {/* ── Header ── */}
-        <div className="mb-12">
+        <div className="mb-12 text-center md:text-left">
           <p className="text-[0.62rem] font-bold uppercase tracking-[0.3em] text-white/25">
             Configurá el tuyo
           </p>
@@ -280,7 +280,7 @@ export default function ComboBuilder() {
           >
             Armá tu combo
           </h2>
-          <p className="mt-3 max-w-sm text-sm text-text-secondary">
+          <p className="mx-auto mt-3 max-w-sm text-sm text-text-secondary md:mx-0">
             Elegí tu burger, el upgrade de papas y algo para tomar. Te mandamos el pedido listo a WhatsApp.
           </p>
         </div>

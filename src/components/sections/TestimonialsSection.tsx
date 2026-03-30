@@ -48,7 +48,7 @@ export default function TestimonialsSection() {
 
         {/* ── Header ── */}
         <div className="mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-          <div>
+          <div className="text-center md:text-left">
             <p className="text-[0.62rem] font-bold uppercase tracking-[0.3em] text-white/25">
               Lo que dicen
             </p>

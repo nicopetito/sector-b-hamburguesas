@@ -1,4 +1,4 @@
-import { Zap, Beer, Gamepad2, Users } from "lucide-react";
+import { Zap, Beer, Gamepad2, Users, PawPrint } from "lucide-react";
 
 const FEATURES = [
   {
@@ -21,15 +21,20 @@ const FEATURES = [
     title: "Salón propio",
     description: "Espacio amplio para grupos. Reservas por WhatsApp.",
   },
+  {
+    icon: PawPrint,
+    title: "Pet friendly",
+    description: "Venís con tu perro, te esperamos. Mascotas bienvenidas.",
+  },
 ];
 
 export default function Experience() {
   return (
-    <section id="experiencia" className="bg-bg-card py-20 md:py-28">
+    <section id="experiencia" className="bg-bg-card py-14 md:py-28">
       <div className="mx-auto max-w-6xl px-4">
 
         {/* ── Header ── */}
-        <div className="mb-14">
+        <div className="mb-8 text-center md:mb-14 md:text-left">
           <p className="text-[0.62rem] font-bold uppercase tracking-[0.3em] text-white/25">
             Por qué Sector B
           </p>
@@ -50,7 +55,7 @@ export default function Experience() {
           {FEATURES.map(({ icon: Icon, title, description }, i) => (
             <div
               key={title}
-              className="flex items-start gap-6 py-7 first:pt-0 last:pb-0 sm:items-center"
+              className="flex items-center gap-4 py-5 first:pt-2 last:pb-0 active:bg-white/5 sm:gap-6 sm:py-7 sm:first:pt-0"
             >
               {/* Ícono */}
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/5">
@@ -69,7 +74,7 @@ export default function Experience() {
                 >
                   {title}
                 </h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-text-secondary">
+                <p className="mt-1.5 text-base leading-relaxed text-text-secondary">
                   {description}
                 </p>
               </div>

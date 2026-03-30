@@ -30,7 +30,7 @@ export default function Location() {
       <div className="mx-auto max-w-6xl px-4">
 
         {/* ── Header ── */}
-        <div className="mb-10">
+        <div className="mb-10 text-center md:text-left">
           <p className="text-[0.62rem] font-bold uppercase tracking-[0.3em] text-white/25">
             Dónde estamos
           </p>

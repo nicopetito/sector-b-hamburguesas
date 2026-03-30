@@ -16,7 +16,7 @@ export default function MenuSection() {
       <div className="mx-auto max-w-6xl px-4">
 
         {/* ── Header ── */}
-        <div className="mb-8 flex items-end justify-between gap-4">
+        <div className="mb-8 flex flex-col items-center gap-3 text-center md:flex-row md:items-end md:justify-between md:text-left">
           <div>
             <p className="text-[0.62rem] font-bold uppercase tracking-[0.3em] text-white/25">
               Todo el menú

@@ -123,8 +123,8 @@ export default function HappyHour() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-[1fr_auto] md:items-center md:gap-12">
 
           {/* ── Columna izquierda: info ── */}
-          <div>
-            <div className="mb-6 flex flex-wrap items-center gap-3">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
+            <div className="mb-6 flex flex-wrap items-center justify-center gap-3 md:justify-start">
               <p className="text-[0.62rem] font-bold uppercase tracking-[0.3em] text-white/25">Todos los días</p>
               <span className={`h-px w-6 ${active ? "bg-turquesa/40" : "bg-white/15"}`} />
               {active ? (
@@ -138,14 +138,14 @@ export default function HappyHour() {
             </div>
 
             <h2
-              className="font-black uppercase leading-[0.9] text-text-primary"
-              style={{ fontFamily: "var(--font-barlow, var(--font-inter))", fontSize: "clamp(3.5rem, 8vw, 6.5rem)", letterSpacing: "-0.03em" }}
+              className="hh-title font-black uppercase leading-[0.9] text-text-primary"
+              style={{ fontFamily: "var(--font-barlow, var(--font-inter))", letterSpacing: "-0.03em" }}
             >
               Happy<br />Hour
             </h2>
 
             {/* Horario */}
-            <div className="mt-5 flex items-center gap-3">
+            <div className="mt-5 flex items-center justify-center gap-3 md:justify-start">
               <span
                 className={`font-black uppercase transition-colors duration-500 ${active ? "text-turquesa" : "text-white/20"}`}
                 style={{ fontFamily: "var(--font-barlow, var(--font-inter))", fontSize: "clamp(1.1rem, 2.5vw, 1.6rem)", letterSpacing: "0.04em" }}
@@ -161,11 +161,11 @@ export default function HappyHour() {
               </span>
             </div>
 
-            <p className="mt-5 max-w-xs text-sm leading-relaxed text-text-secondary">
+            <p className="mt-5 text-sm leading-relaxed text-text-secondary md:max-w-xs">
               2×1 en cervezas tiradas y tragos de la carta. Vení temprano y aprovechá.
             </p>
 
-            <div className="mt-4 flex flex-wrap gap-2">
+            <div className="mt-4 flex flex-wrap justify-center gap-2 md:justify-start">
               {["Cervezas tiradas", "Tragos de la carta"].map((label) => (
                 <span
                   key={label}

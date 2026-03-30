@@ -24,7 +24,7 @@ export default function Navbar() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
 
         {/* ── Logo ── */}
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
           <span
             className="font-black uppercase leading-none tracking-tight text-turquesa"
             style={{

@@ -17,6 +17,7 @@ export default function Hero() {
           poster="/images/burgers/lasector.png"
           className="absolute inset-0 h-full w-full object-cover object-center md:object-right"
           style={{ filter: "brightness(0.55)" }}
+          suppressHydrationWarning
         >
           {/* Agregar /videos/hero.mp4 para activar el video — el poster se muestra hasta entonces */}
           <source src="/videos/hero.mp4" type="video/mp4" />
